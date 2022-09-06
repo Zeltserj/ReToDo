@@ -6,8 +6,8 @@ const ToDo = ({todo, handleToggle}) => {
         handleToggle(e.currentTarget.id)
     }
     return (
-        <div id={todo.id} name="todo" value={todo.id} className={todo.complete ? "strike" : ""} onClick={handleClick}>
-        {todo.task}
+        <div id={todo.id} name="todo" value={todo.id} c lassName={todo.complete ? "strike" : ""} onClick={handleClick}>
+        <input type="checkbox" checked={todo.complete} />{todo.task}
         </div>
     );
 };
