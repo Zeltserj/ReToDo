@@ -11,9 +11,9 @@ const ToDoListForm = ({addTask}) => {
         setUserInput("");
     }
     return (
-        <div> 
+        <div>
             <input value={userInput} onChange={handleChange}  type="text" placeholder="Enter task..."/>
-            <button onClick={handleSubmit}> Submit</button>
+            <button onClick={handleSubmit}>Submit</button>
         </div>
     )
 }
